@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="center">
+        {% csrf_token %}
+        <h1>회원가입</h1>
+        <div class="form-group">
+            <input type="text" class="form-control" name="username">
+            <span></span>
+            <label for="username">User ID</label>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email">
+                <span></span>
+                <label for="inputEmail4">Email</label>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="password" class="form-control" name="password1">
+                <span></span>
+                <label for="inputPassword4">Password</label>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="password" class="form-control" name="password2">
+                <span></span>
+                <label for="inputPassword4">Password</label>
+            </div>
+        </div>
+        <input type="submit" value="Join">
+    </div>  
+{% endblock %}

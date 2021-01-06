@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/fstyle.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    </head>
+    <body>
+        <div class="main_img">
+            <li class="introduce">모두와 함께, 모든 분야와 함께 만들어가는 나만의 포트폴리오</li>
+            <button class="button:focus button:hover button skip">
+                <a href="{% url "posts:home" %}">SKIP</a>
+            </button>
+        </div>
+    </body>
+</html>
