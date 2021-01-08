@@ -138,3 +138,14 @@ SUMMERNOTE_CONFIG = {
     'lang': None,
 
 }
+
+
+#이메일 전송(버튼 value값 받아서 전송 되게끔 해야함)
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'cksdud0306@gmail.com' # ex) cksdud0306@gmail.com
+EMAIL_HOST_PASSWORD = 'dhlrPdls1' # ex) Password
+SERVER_EMAIL = 'cksdud0306@gmail.com' # ex) cksdud0306@gmail.com
+DEFAULT_FROM_MAIL = 'cksdud0306' # ex) cksdud0306
